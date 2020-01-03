@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">mine_module</string>
+    <string name="article_name" translatable="false">我的模块</string>
+</resources>
