@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">WProject</string>
+    <string name="app_name" translatable="false">WProject</string>
+    <string name="app_name2" translatable="false">极速汇</string>
 </resources>
