@@ -45,7 +45,8 @@ public class HomeActivity extends BaseActivity implements IWebPageView {
     // 全屏时视频加载view
     private FrameLayout videoFullView;
 
-    private String mUrl = "http://192.168.1.240:8082";
+    // private String mUrl = "http://192.168.1.240:8082";
+    private String mUrl = "file:///android_asset/dist/index.html";
 
     @Override
     protected void initView() {
