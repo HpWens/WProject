@@ -13,6 +13,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+        manifestPlaceholders = [
+                "IS_RELEASE"  : false,
+                "FLAVORS_CODE": 1
+        ]
+
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [moduleName: project.getName()]
@@ -20,6 +25,8 @@ android {
         }
 
         multiDexEnabled true
+
+        flavorDimensions "versionCode"
     }
     buildTypes {
         release {
@@ -27,6 +34,28 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+
+        // 极速汇
+        jisuhui {
+            applicationId "com.ws.wproject"
+            resValue "string", "app_name2", "极速汇"
+            manifestPlaceholders = [app_icon      : "@mipmap/ic_launcher",
+                                    app_round_icon: "@mipmap/ic_launcher_round",
+                                    "FLAVORS_CODE": 1]
+        }
+
+        // 掌中淘
+        zhangzhongtao {
+            applicationId "com.ws.zzt"
+            resValue "string", "app_name2", "掌中淘"
+            manifestPlaceholders = [app_icon      : "@mipmap/ic_launcher",
+                                    app_round_icon: "@mipmap/ic_launcher_round",
+                                    "FLAVORS_CODE": 1]
+        }
+    }
+
 }
 
 dependencies {
@@ -40,7 +69,6 @@ dependencies {
 //    if (isNeedMineModule.toBoolean()) {
 //        implementation project(':mine_module')
 //    }
-
 
 
 //    testImplementation 'junit:junit:4.12'
