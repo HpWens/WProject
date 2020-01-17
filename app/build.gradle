@@ -50,8 +50,8 @@ android {
         zhangzhongtao {
             applicationId "com.ws.zzt"
             resValue "string", "app_name2", "掌中淘"
-            manifestPlaceholders = [app_icon      : "@mipmap/ic_launcher",
-                                    app_round_icon: "@mipmap/ic_launcher_round",
+            manifestPlaceholders = [app_icon      : "@mipmap/ic_zzt_launcher",
+                                    app_round_icon: "@mipmap/ic_zzt_launcher",
                                     "FLAVORS_CODE": 1]
         }
     }
