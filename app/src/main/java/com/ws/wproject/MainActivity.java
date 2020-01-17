@@ -10,6 +10,13 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        int flavors = ((MyApplication) getApplication()).getFlavorsCode();
+        if (flavors == 2) {
+            setTheme(R.style.AppTheme_ZZT_Launcher);
+        } else if (flavors == 1) {
+            setTheme(R.style.AppTheme_Launcher);
+        }
+
         super.onCreate(savedInstanceState);
         // setContentView(R.layout.activity_main);
 

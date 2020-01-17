@@ -43,6 +43,7 @@ android {
             resValue "string", "app_name2", "极速汇"
             manifestPlaceholders = [app_icon      : "@mipmap/ic_launcher",
                                     app_round_icon: "@mipmap/ic_launcher_round",
+                                    app_splash    : "@mipmap/ic_splash",
                                     "FLAVORS_CODE": 1]
         }
 
@@ -52,7 +53,8 @@ android {
             resValue "string", "app_name2", "掌中淘"
             manifestPlaceholders = [app_icon      : "@mipmap/ic_zzt_launcher",
                                     app_round_icon: "@mipmap/ic_zzt_launcher",
-                                    "FLAVORS_CODE": 1]
+                                    app_splash    : "@mipmap/ic_zzt_splash",
+                                    "FLAVORS_CODE": 2]
         }
     }
 

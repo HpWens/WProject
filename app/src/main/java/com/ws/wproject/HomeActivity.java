@@ -55,6 +55,10 @@ public class HomeActivity extends BaseActivity implements IWebPageView {
 
     @Override
     protected void initData() {
+        int flavors = ((MyApplication) getApplication()).getFlavorsCode();
+        if (flavors == 2) {
+            mUrl = "file:///android_asset/zzt_dist/index.html";
+        }
         new RxPermissions(this).request(new String[]{
                 Manifest.permission.WRITE_EXTERNAL_STORAGE
                 , Manifest.permission.READ_EXTERNAL_STORAGE})
